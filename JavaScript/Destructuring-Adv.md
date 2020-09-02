@@ -27,3 +27,36 @@ export const Transaction = ({t}) => {
 ```
 
 ![Dest1](./img/Dest1.png)
+
+**Use Case**
+Inside a React component that sums and displays separately income (positive) and expense (negative).
+
+Inside a single ` reduce() ` function we can calculate both income and expense at the same time instead of calculating them separately. We can simply return an array inside each returned element of a Ternary Operator with the calculation already performed and then immediately destructure the returned array providing us instant access to the two variables we need inside the JSX return statement.
+
+```javascript
+import React, { useContext } from 'react'
+import { GlobalContext } from '../context/GlobalState';
+
+export const IncomeExpenses = () => {
+
+  const { transactions } = useContext(GlobalContext);
+  const [income, expense] = transactions.reduce((prev, curr) => {
+    return ((curr.amount > 0) ? [prev[0] + Math.abs(curr.amount), prev[1]] : [prev[0], prev[1] + Math.abs(curr.amount)]);
+  }, [0, 0]);
+
+  return (
+    <div className="inc-exp-container">
+      <div>
+        <h4>Income</h4>
+        <p className="money plus">+${income}</p>
+      </div>
+      <div>
+        <h4>Expense</h4>
+        <p className="money minus">-${expense}</p>
+      </div>
+    </div>
+  )
+}
+```
+
+![Dest2](./img/Dest2.png)
