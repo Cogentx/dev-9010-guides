@@ -60,3 +60,5 @@ export const IncomeExpenses = () => {
 ```
 
 ![Dest2](./img/Dest2.png)
+
+![Context1](./img/Context1.png)
