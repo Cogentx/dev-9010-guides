@@ -4,7 +4,7 @@
 
 ### Advanced Scenarios
 
-#### Desctructuring with Ternary Operator
+#### Destructuring with Ternary Operator
 
 **Use Case**
 Inside a React component that produces list items we have two dynamic values based on the ` amount ` prop passed in.  One will determine the class name we set and other displays a ` +/- ` sign in front of the number.
