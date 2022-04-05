@@ -3,7 +3,7 @@
 **Note**: if using `npm` instead of `yarn` simply update 'package.json' file 'scripts' section replacing `yarn` with `npm`.
 
 ```
-git clone ....
+git clone <repo>
 yarn install --no-lockfile
 ```
 
