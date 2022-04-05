@@ -8,5 +8,5 @@
     "lib": ["dom", "esnext"],
     "noEmit": true
   },
-  "include": ["_stratchPad/src"]
+  "include": ["_scratchPad/src"]
 }
