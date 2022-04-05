@@ -1,3 +1,12 @@
 node_modules/
 lib/
+
+# config
+.editorconfig
+.npmrc
 .vscode/
+yarn.lock
+package-lock.json
+
+# local notes
+_ref/

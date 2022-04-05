@@ -4,7 +4,7 @@
 
 ```
 git clone <repo>
-yarn install --no-lockfile
+yarn install
 ```
 
 # Start Live
