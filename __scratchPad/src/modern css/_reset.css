@@ -1,3 +1,4 @@
+/* reset and defaults */
 body {
   box-sizing: border-box;
   margin: 0;
@@ -6,4 +7,9 @@ body {
 
 menu {
   list-style-type: none;
+}
+
+main > h1,
+article > h3 {
+  text-align: center;
 }

@@ -3,11 +3,6 @@
   --container-padding: 0 1em;
 }
 
-main > h1,
-article > h3 {
-  text-align: center;
-}
-
 .container {
   border: var(--container-border-width) solid limegreen;
   padding: var(--container-padding);
