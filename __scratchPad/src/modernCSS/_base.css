@@ -14,7 +14,13 @@ body {
   line-height: 1.6;
   background-color: var(--bg);
   color: var(--text);
-  overflow: hidden;
+  overflow-x: hidden;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 header > .title {
@@ -30,14 +36,13 @@ main {
   justify-content: center;
 }
 
-main > h1,
 article > h3 {
   text-align: center;
 }
 
 .sidebar {
   /* TODO: remove width */
-  width: min(100% - 50px, 400px);
+  /* width: min(100% - 50px, 400px); */
 
   min-height: 100vh;
   background-color: var(--bg-nav);
@@ -45,33 +50,23 @@ article > h3 {
   right: 0;
   top: 0;
   box-shadow: 0 0 3em rgba(0, 0, 0, 0.15);
-  /* transition: transform 300ms cubic-bezier(0.5, 0, 0.5, 1);
-  transform: translateX(100%); */
-}
-
-.sidebar__toggle {
-  position: absolute;
-  top: 5em;
-  left: 0;
-  background-color: var(--bg-nav);
-  transform: translateX(-100%);
-  padding: 1em 0.5em;
-  border: 0;
-  border-radius: 0.25em 0 0 0.25em;
+  transition: transform 300ms cubic-bezier(0.5, 0, 0.5, 1);
+  transform: translateX(100%);
 }
 
 .sidebar__list {
-  list-style: none !important;
+  list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
-  overflow: scroll;
+  /* overflow: scroll; */
 }
 
 .sidebar__item {
   padding: 1em 2em;
   margin-bottom: 1em;
+  cursor: pointer;
 }
 
 .sidebar__item:hover {
