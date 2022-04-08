@@ -49,6 +49,17 @@ article > h3 {
   transform: translateX(100%); */
 }
 
+.sidebar__toggle {
+  position: absolute;
+  top: 5em;
+  left: 0;
+  background-color: var(--bg-nav);
+  transform: translateX(-100%);
+  padding: 1em 0.5em;
+  border: 0;
+  border-radius: 0.25em 0 0 0.25em;
+}
+
 .sidebar__list {
   list-style: none !important;
   margin: 0;
