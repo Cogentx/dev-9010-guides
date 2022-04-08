@@ -1,15 +1,11 @@
 /* reset and defaults */
-body {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
+}
+
+body {
   margin: 0;
   padding: 0;
-}
-
-menu {
-  list-style-type: none;
-}
-
-main > h1,
-article > h3 {
-  text-align: center;
 }
