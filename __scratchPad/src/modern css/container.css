@@ -1,0 +1,28 @@
+.container {
+  --container-border-width: 5px;
+  --container-padding: 0 1em;
+}
+
+main > h1,
+article > h3 {
+  text-align: center;
+}
+
+.container {
+  border: var(--container-border-width) solid limegreen;
+  padding: var(--container-padding);
+}
+
+.container-new {
+  /* min-width is dynamic; max-width set at 600px*/
+  width: min(100% - var(--container-border-width) * 2 - var(--container-padding) * 2, 600px);
+  /* margin auto on x-axis to center on page horizontally */
+  margin-inline: auto;
+}
+
+.container-old {
+  /* width set a 100% does not account for padding and border */
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
