@@ -1,22 +1,19 @@
 .container {
-  --container-border-width: 5px;
-  --container-padding: 0 1em;
-}
-
-.container {
-  border: var(--container-border-width) solid limegreen;
-  padding: var(--container-padding);
+  --border: 5px;
+  --padding: 0 16px;
+  border: var(--border) solid limegreen;
+  padding: var(--padding);
 }
 
 .container-new {
   /* min-width is dynamic; max-width set at 600px*/
-  width: min(100% - var(--container-border-width) * 2 - var(--container-padding) * 2, 600px);
+  width: min(100% - var(--border) * 2 - var(--padding) * 2, 600px);
   /* margin auto on x-axis to center on page horizontally */
   margin-inline: auto;
 }
 
 .container-old {
-  /* width set a 100% does not account for padding and border */
+  /* width set at 100% does not account for padding and border */
   width: 100%;
   max-width: 600px;
   margin: 0 auto;
