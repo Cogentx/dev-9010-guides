@@ -3,18 +3,16 @@
   --padding: 0 16px;
   border: var(--border) solid limegreen;
   padding: var(--padding);
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .container-new {
   /* min-width is dynamic; max-width set at 600px*/
-  width: min(100% - var(--border) * 2 - var(--padding) * 2, 600px);
-  /* margin auto on x-axis to center on page horizontally */
-  margin-inline: auto;
+  width: min(100% - var(--border) * 2 - var(--padding) * 2);
 }
 
 .container-old {
   /* width set at 100% does not account for padding and border */
   width: 100%;
-  max-width: 600px;
-  margin: 0 auto;
 }
