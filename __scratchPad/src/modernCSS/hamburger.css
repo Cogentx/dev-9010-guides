@@ -9,7 +9,7 @@
   width: 2em;
   height: 3px;
   background-color: var(--text);
-  transition: transform 350ms ease-in-out, opacity 200ms linear;
+  transition: transform 350ms ease-in-out, opacity 150ms linear;
 }
 
 .hamburger::before,
@@ -32,4 +32,13 @@
 }
 
 .sidebar__open .hamburger {
+  transform: rotate(45deg);
+}
+
+.sidebar__open .hamburger::before {
+  opacity: 0;
+}
+
+.sidebar__open .hamburger::after {
+  transform: rotate(90deg) translate(-6px);
 }
